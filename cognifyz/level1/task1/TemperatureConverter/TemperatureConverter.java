@@ -15,12 +15,10 @@ public class TemperatureConverter {
 		String unit = sc.next().trim().toUpperCase();
 		
 		//conversion based on the unit
-		if(unit.equals("C")){
-			double convertedTempInFahr = celsiusToFahrenheit(temperature);
-			System.out.println(temperature + "°C is equal to " + convertedTempInFahr +"°F" );
-		}else if(unit.equals("F")){
-			double convertedTempeInCels = FahrenheitToCelsius(temperature);
-			System.out.println(temperature + "°F is equal to " + convertedTempeInCels +"°C" );
+		if(unit.equals("C")){			
+			System.out.println(temperature + "°C is equal to " + celsiusToFahrenheit(temperature) +"°F" );
+		}else if(unit.equals("F")){		
+			System.out.println(temperature + "°F is equal to " + fahrenheitToCelsius(temperature) +"°C" );
 		}else {
 			System.out.println("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.");
 		}
@@ -32,10 +30,7 @@ public class TemperatureConverter {
 	}
 	
 	//Conversion for fahrenheit to celsius
-	public static double FahrenheitToCelsius(double fahrenheit) {
-		return ( 5/9 ) * (fahrenheit - 32); 
+	public static double fahrenheitToCelsius(double fahrenheit) {
+		return (fahrenheit - 32) * 5/9; 
 	}
-	
-	
-
 }
