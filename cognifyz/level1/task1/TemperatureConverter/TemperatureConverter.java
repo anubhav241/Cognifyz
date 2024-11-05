@@ -22,6 +22,7 @@ public class TemperatureConverter {
 		}else {
 			System.out.println("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.");
 		}
+		sc.close();
 	}
 	
 	//Conversion for celsius to fahrenheit
