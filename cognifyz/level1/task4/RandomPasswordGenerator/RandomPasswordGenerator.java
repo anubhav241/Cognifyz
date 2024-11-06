@@ -9,10 +9,10 @@ public class RandomPasswordGenerator {
 		Random random = new Random();
 		
 		//Character pools for random password generation
-        String numbers = "0123456789";
-        String lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-        String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String specialCharacters = "!@#$%^&*()-_=+[]{};:,.<>?";
+	        String numbers = "0123456789";
+	        String lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+	        String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	        String specialCharacters = "!@#$%^&*()-_=+[]{};:,.<>?";
 		
 		//Prompt the user to enter the desired length of the password
 		System.out.print("Enter the length of the password: ");
@@ -62,7 +62,7 @@ public class RandomPasswordGenerator {
 		if(characterPool.isEmpty()) {
 			System.out.println("Error occured...!! You must include at least one type of character to generate a password.");
 			sc.close();
-            return;
+            		return;
 		}
 		
 		//Now Generate the random password according to the user requirement
